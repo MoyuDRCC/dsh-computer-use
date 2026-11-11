@@ -1,0 +1,12 @@
+# dsh-computer-use bundle patch: inserts the computer-use plugin row into the
+# profile roster. Applied as a profile bundle layer (the `dsh.bundle.patch`
+# manifest field) over dsh-base.
+#
+# The row runs in the Host process: it owns one persistent UI Automation helper
+# child process and registers the `computer` agent tool.
+- insert:
+    - id: computer-use
+      name: 'dsh-computer-use'
+      config:
+        announceToAgent: true
+        maxNodes: 300

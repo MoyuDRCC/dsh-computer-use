@@ -1,0 +1,37 @@
+{
+  "name": "dsh-computer-use",
+  "version": "0.1.0",
+  "description": "Computer use for DSH on Windows: read and drive native apps through UI Automation, with window screenshots for pixel confirmation",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "files": [
+    "index.js",
+    "lib/",
+    "helper/",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT",
+  "keywords": [
+    "dsh-plugin",
+    "computer-use",
+    "ui-automation",
+    "desktop-automation"
+  ]
+}
