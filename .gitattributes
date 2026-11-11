@@ -1,0 +1,8 @@
+# 文本文件统一以 LF 入库，检出也不做 CRLF 转换
+* text=auto eol=lf
+
+# 二进制文件不做行尾处理
+*.png binary
+*.ico binary
+*.exe binary
+*.dll binary

@@ -28,6 +28,15 @@
     "node": ">=20"
   },
   "license": "MIT",
+  "author": "MoyuDRCC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MoyuDRCC/dsh-computer-use.git"
+  },
+  "homepage": "https://github.com/MoyuDRCC/dsh-computer-use#readme",
+  "bugs": {
+    "url": "https://github.com/MoyuDRCC/dsh-computer-use/issues"
+  },
   "keywords": [
     "dsh-plugin",
     "computer-use",

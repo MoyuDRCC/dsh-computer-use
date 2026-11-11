@@ -200,6 +200,8 @@ node test/tool.mjs    # 10 项：工具层注册、action 分发、错误码、�
 两个脚本自己启停受控窗口，不碰用户数据；过程中会有真实键鼠输入。
 需要窗口在前台的用例（坐标、键盘、拖拽）在系统前台锁定期间记为 SKIP，不会假装通过。
 
+`test/shims/` 里是一个伪造的 `@deepseek-ai/dsh-tools`，让工具层用例不必安装真实依赖即可运行。
+
 ## 已知边界
 
 - 只支持 Windows。
@@ -213,4 +215,4 @@ node test/tool.mjs    # 10 项：工具层注册、action 分发、错误码、�
 
 ## 许可证
 
-MIT
+[MIT](LICENSE) © 2026 MoyuDRCC
